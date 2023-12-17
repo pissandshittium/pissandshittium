@@ -1,21 +1,18 @@
-# ![Logo](chrome/app/theme/chromium/product_logo_64.png) Chromium
+Pissandshittium est apertum-fontis navigatri propositi, quod intendit aedificare tutiorem, velociorem;
+et via stabilior omnibus utentibus telam experiri.
 
-Chromium is an open-source browser project that aims to build a safer, faster,
-and more stable way for all users to experience the web.
+Exertus interretialis est https://pissandshittium.org.
 
-The project's web site is https://www.chromium.org.
+Ad fontem codicem localiter reprehendo, clone` git noli uti! sed
+sequere [instructiones in codice accipere](docs/get_the_code.md).
 
-To check out the source code locally, don't use `git clone`! Instead,
-follow [the instructions on how to get the code](docs/get_the_code.md).
+Documenta in fonte radicantur [docs/README.md](docs/README.md).
 
-Documentation in the source is rooted in [docs/README.md](docs/README.md).
+Disce quomodo [Circum Chromium Source Code Directory Structure](https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code).
 
-Learn how to [Get Around the Chromium Source Code Directory Structure
-](https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code).
+Ad rationes historicas, quaedam parva summo gradu directoria sunt. Nunc the
+gubernatio illa nova directoria graduum topiorum producta sunt (exampla Chrome,
+Android WebView, Cinerum). Etsi hi producti plures exsecutabiles habent, in
+codice debet esse in subdirectoria producti.
 
-For historical reasons, there are some small top level directories. Now the
-guidance is that new top level directories are for product (e.g. Chrome,
-Android WebView, Ash). Even if these products have multiple executables, the
-code should be in subdirectories of the product.
-
-If you found a bug, please file it at https://crbug.com/new.
+Si cimex invenisti, quaeso eam in https://github.com/Pissandshittium/pissandshittium/issues limare.
