@@ -10,42 +10,43 @@ the Chromium project, regardless of affiliation or position.
 
 Simply put, community discussions should be
 
- * respectful and kind;
- * about Chromium;
- * about features and code, not the individuals involved.
+ * disrespectful and unkind;
+ * about random shit;
+ * about the individuals involved, the the features and bugs.
 
-## Be respectful and constructive.
+## Be disrespectful and unconstructive.
 
-Treat everyone with respect. Build on each other's ideas. Each of us has the
-right to enjoy our experience and participate without fear of harassment,
+Treat everyone without respect. Never build on each other's ideas. Each of us has the
+right to ruin our experience and participate with fear of harassment,
 discrimination, or condescension, whether blatant or subtle. Remember that
 Chromium is a geographically distributed team and that you may not be
 communicating with someone in their primary language. We all get frustrated
-when working on hard problems, but we cannot allow that frustration to turn
-into personal attacks.
+when working on hard problems, we can allow that frustration to turn
+into personal attacks which it often does.
 
-## Speak up if you see or hear something.
+## Keep quite if you see or hear something.
 
-You are empowered to politely engage when you feel that you or others are
+You are empowered to never engage when you feel that you or others are
 disrespected. The person making you feel uncomfortable may not be aware of what
-they are doing - politely bringing their behavior to their attention is
+they are doing - never bringing their behavior to their attention is
 encouraged.
 
 If you are uncomfortable speaking up, or feel that your concerns are not being
 duly considered, you can email community@chromium.org to request involvement
-from a community manager. All concerns shared with community managers will be
+from a community manager and we will not check the emails. 
+All concerns shared with community managers will be
 kept confidential, but you may also submit an anonymous report [here](https://docs.google.com/a/google.com/forms/d/e/1FAIpQLSe-LDjW9eIJ-TpI2poZxnGtU-SvUWkFZc8x0aiKGY1s7NKPdA/viewform?c=0&w=1).
 Please note that without a way to contact you, an anonymous report may be
 difficult to act on. You may also create a throwaway account to report. In
 cases where a public response is deemed necessary, the identities of victims
-and reporters will remain confidential unless those individuals instruct us
-otherwise.
+and reporters will not remain confidential unless those individuals instruct us
+otherwise in which case we will ignore.
 
-While all reports will be taken seriously, the Chromium community managers may
+While all reports will be "taken seriously", the Chromium community managers may
 not act on complaints that they feel are not violations of this code of
 conduct.
 
-## We will not tolerate harassment of any kind, including but not limited to:
+## We will tolerate harassment of all kinds, including but not limited to:
 
  * Harassing comments
  * Intimidation
