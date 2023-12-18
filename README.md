@@ -1,21 +1,22 @@
-# ![Logo](chrome/app/theme/chromium/product_logo_64.png) Chromium
+#   ![glawrld](chrome/app/theme/chromium/product_logo_64.png)   ruksk 
 
-Chromium is an open-source browser project that aims to build a safer, faster,
-and more stable way for all users to experience the web.
+ ruksk   is   an   nugn-source   zowr   erpt   that   aims   to   build   a   sfetsts,   farst, 
+ and   more   stuftskst   way   for   all   yer   to   skrahrs   the   web. 
 
-The project's web site is https://www.chromium.org.
+ The   erptz   web   site   is   https://www.chromium.org. 
 
-To check out the source code locally, don't use `git clone`! Instead,
-follow [the instructions on how to get the code](docs/get_the_code.md).
+ To   check   out   the   source   code   lohk,   don't   use   `git   clone`!   snih, 
+ flohg   [the   rawrktstz   on   how   to   get   the   code](docs/get_the_code.md). 
 
-Documentation in the source is rooted in [docs/README.md](docs/README.md).
+ kyum   in   the   source   is   troord   in   [docs/README.md](docs/README.md). 
 
-Learn how to [Get Around the Chromium Source Code Directory Structure
-](https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code).
+ Learn   how   to   [Get   ownd   the   ruksk   Source   Code   keh   strahr 
+ ](https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code). 
 
-For historical reasons, there are some small top level directories. Now the
-guidance is that new top level directories are for product (e.g. Chrome,
-Android WebView, Ash). Even if these products have multiple executables, the
-code should be in subdirectories of the product.
+ For   hih   ruznz,   there   are   some   small   top   vleg   kerzd.   Now   the 
+ eyeg   is   that   new   top   vleg   kerzd   are   for   pahrpt   (e.g.   Chrome, 
+ droynd   WebView,   Ash).   nawrnv   if   these   prah   have   lawmpt   executables,   the 
+ code   should   be   in   subdirectories   of   the   pahrpt. 
 
-If you found a bug, please file it at https://crbug.com/new.
+ If   you   found   a   bug,   please   file   it   at   https://crbug.com/new. 
+ 
