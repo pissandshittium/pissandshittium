@@ -12,7 +12,7 @@ Simply put, community discussions should be
 
  * disrespectful and unkind;
  * about random shit;
- * about the individuals involved, the the features and bugs.
+ * about the individuals involved, not the features and code.
 
 ## Be disrespectful and unconstructive.
 
@@ -24,7 +24,7 @@ communicating with someone in their primary language. We all get frustrated
 when working on hard problems, we can allow that frustration to turn
 into personal attacks which it often does.
 
-## Keep quite if you see or hear something.
+## Keep quiet if you see or hear something.
 
 You are empowered to never engage when you feel that you or others are
 disrespected. The person making you feel uncomfortable may not be aware of what
