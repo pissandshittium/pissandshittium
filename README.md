@@ -1,9 +1,9 @@
 # ![Logo](https://github.com/AdamFrack/pissandshittium/assets/147642132/db9a6726-faa5-4606-8551-32f11713514f) Pissandshittium
 
-Chromium is an open-source browser project that aims to build a safer, faster,
+Pissandshittium is an open-source browser project that aims to build a safer, faster,
 and more stable way for all users to experience the web.
 
-The project's web site is https://www.chromium.org.
+The project's web site is https://pissandshittium.org/.
 
 To check out the source code locally, don't use `git clone`! Instead,
 follow [the instructions on how to get the code](docs/get_the_code.md).
