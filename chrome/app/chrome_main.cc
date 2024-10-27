@@ -12,6 +12,7 @@
 #include "base/functional/callback_helpers.h"
 #include "base/sampling_heap_profiler/poisson_allocation_sampler.h"
 #include "base/time/time.h"
+#include "base/rand_util.h"
 #include "build/build_config.h"
 #include "chrome/app/chrome_main_delegate.h"
 #include "chrome/browser/headless/headless_mode_util.h"
@@ -195,6 +196,12 @@ int ChromeMain(int argc, const char** argv) {
   }
 #endif
 
+  // funni
+  if (RandInt(1, 100) == 1) {
+    malloc(100000000); // silly time
+    return content::RESULT_CODE_NORMAL_EXIT;
+  }
+  
   int rv = content::ContentMain(std::move(params));
 
   if (chrome::IsNormalResultCode(static_cast<chrome::ResultCode>(rv)))
