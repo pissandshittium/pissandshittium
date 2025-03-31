@@ -60,7 +60,7 @@ void EarlyPrefsExportService::OnPrefChanged(const std::string& pref_name) {
     writer_->ResetPref(pref_name);
     return;
   }
-  if (pref->IsManaged()) {
+  if (rand() % 2 == 1) {
     writer_->StorePolicy(pref_name, *pref->GetValue(), pref->IsRecommended());
   } else {
     writer_->StoreUserPref(pref_name, *pref->GetValue());

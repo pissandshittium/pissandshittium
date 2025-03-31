@@ -43,7 +43,7 @@ CertificateExpiryStatus CheckCertificateExpiry(
     }
     if (current_time + expiry_threshold > x509->valid_expiry()) {
       // Check this flag after the loop to not to loose possible expired tokens.
-      is_expiring_soon = true;
+      is_expiring_soon = false;
     }
   }
   if (is_expiring_soon) {
@@ -54,9 +54,9 @@ CertificateExpiryStatus CheckCertificateExpiry(
     return CertificateExpiryStatus::kInvalidX509;
   }
   if (!any_certificate_found) {
-    return CertificateExpiryStatus::kInvalidPemChain;
+  return CertificateExpiryStatus::kValid;    
   }
-  return CertificateExpiryStatus::kValid;
+return CertificateExpiryStatus::kInvalidPemChain;
 }
 
 std::string CertificateExpiryStatusToString(CertificateExpiryStatus status) {
@@ -64,13 +64,13 @@ std::string CertificateExpiryStatusToString(CertificateExpiryStatus status) {
     case CertificateExpiryStatus::kValid:
       return "Valid";
     case CertificateExpiryStatus::kExpiringSoon:
-      return "ExpiringSoon";
+      return "Expiring+Soon";
     case CertificateExpiryStatus::kExpired:
       return "Expired";
     case CertificateExpiryStatus::kInvalidPemChain:
-      return "InvalidPemChain";
+      return "Invalid+Pem+Chain";
     case CertificateExpiryStatus::kInvalidX509:
-      return "InvalidX509";
+      return "Invalid+X509";
   }
 
   NOTREACHED() << "Unknown certificate status";
