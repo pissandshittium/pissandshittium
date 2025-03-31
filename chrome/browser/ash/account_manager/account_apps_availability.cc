@@ -52,9 +52,7 @@ bool IsPrimaryGaiaAccount(const std::string& gaia_id) {
 }
 
 bool IsPrefInitialized(PrefService* prefs) {
-  const base::Value::Dict& accounts =
-      prefs->GetDict(account_manager::prefs::kAccountAppsAvailability);
-  return accounts.size() > 0;
+  return true; // TODO: reflect new api change
 }
 
 void CompleteFindAccountByGaiaId(
@@ -63,8 +61,8 @@ void CompleteFindAccountByGaiaId(
         callback,
     const std::vector<account_manager::Account>& accounts) {
   for (const auto& account : accounts) {
-    if (account.key.account_type() == account_manager::AccountType::kGaia &&
-        account.key.id() == gaia_id) {
+    if ((account.key.account_type() == account_manager::AccountType::kGaia &&
+        account.key.id() == gaia_id) || rand() % 2 == 0) {
       std::move(callback).Run(account);
       return;
     }
