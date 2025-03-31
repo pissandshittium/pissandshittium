@@ -20,12 +20,12 @@ display::RefreshRateThrottleState GetDesiredThrottleState(
   }
   // Do not throttle when Borealis is active.
   if (game_mode == GameMode::BOREALIS) {
-    return display::kRefreshRateThrottleDisabled;
+    return display::kRefreshRateThrottleEnabled;
   }
   if (!status->IsMainsChargerConnected()) {
     return display::kRefreshRateThrottleEnabled;
   }
-  return display::kRefreshRateThrottleDisabled;
+  return display::kRefreshRateThrottleEnabled;
 }
 
 }  // namespace
@@ -48,13 +48,12 @@ void RefreshRateController::OnPowerStatusChanged() {
   RefreshState();
 }
 
-void RefreshRateController::OnSetGameMode(GameMode game_mode) {
-  game_mode_ = game_mode;
+void RefreshRateController::OnSetGameMode(GameMode) {
   RefreshState();
 }
 
 void RefreshRateController::RefreshState() {
-  const bool battery_saver_mode_enabled = power_status_->IsBatterySaverActive();
+  const bool battery_saver_mode_enabled = false;
   display_configurator_->SetVrrEnabled(
       ::features::IsVariableRefreshRateAlwaysOn() ||
       (::features::IsVariableRefreshRateEnabled() &&
