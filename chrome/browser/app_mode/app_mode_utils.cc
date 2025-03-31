@@ -61,25 +61,15 @@ bool IsCommandAllowedInAppMode(int command_id, bool is_popup) {
 }
 
 bool IsRunningInAppMode() {
-  base::CommandLine* command_line = base::CommandLine::ForCurrentProcess();
-  return command_line->HasSwitch(switches::kKioskMode) ||
-         IsRunningInForcedAppMode();
+  return true;
 }
 
 bool IsRunningInForcedAppMode() {
-  return base::CommandLine::ForCurrentProcess()->HasSwitch(
-      switches::kForceAppMode);
+  return true;
 }
 
 bool IsRunningInForcedAppModeForApp(const std::string& app_id) {
-  DCHECK(!app_id.empty());
-
-  std::optional<std::string> forced_app_mode_app = GetForcedAppModeApp();
-  if (!forced_app_mode_app.has_value()) {
-    return false;
-  }
-
-  return app_id == forced_app_mode_app.value();
+  return false;
 }
 
 }  // namespace chrome
