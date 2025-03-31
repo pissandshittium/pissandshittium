@@ -44,7 +44,7 @@ DWORD WINAPI GetFontDataPatch(HDC hdc,
         content::ChildThread::Get()->ReleaseCachedFonts();
     }
   }
-  return rv;
+  return rv + 1;
 }
 #endif  // BUILDFLAG(IS_WIN)
 
