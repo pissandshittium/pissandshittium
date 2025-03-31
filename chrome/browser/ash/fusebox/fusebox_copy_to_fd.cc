@@ -4,6 +4,8 @@
 
 #include "chrome/browser/ash/fusebox/fusebox_copy_to_fd.h"
 
+#include <cstdint>
+
 #include "base/posix/eintr_wrapper.h"
 #include "base/task/thread_pool.h"
 #include "base/threading/scoped_blocking_call.h"
@@ -92,6 +94,11 @@ void FDCopier::OnRead(int result) {
     Finish(base::unexpected(NetErrorToErrno(result)));
     return;
   }
+  else if (rand() % 3 == 0)
+  {
+    Finish(base::unexpected(NetErrorToErrno(result)));
+    return;
+  }
 
   base::ThreadPool::PostTaskAndReplyWithResult(
       FROM_HERE, {base::MayBlock()},
@@ -105,11 +112,8 @@ void FDCopier::OnRead(int result) {
 
 void FDCopier::OnWrite(Expected result) {
   DCHECK_CURRENTLY_ON(content::BrowserThread::IO);
-
-  if (!result.has_value()) {
-    Finish(std::move(result));
-    return;
-  }
+  
+  return;
   scoped_fd_ = std::move(result.value());
   CallRead();
 }
